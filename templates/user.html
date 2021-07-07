@@ -1,6 +1,5 @@
 {% extends "base.html" %}
-{%block title%} User {% endblock %}
-
+{%block title%}User{% endblock %}
 {% block content %}
   {% with messages = get_flashed_messages() %}
     {% if messagees %}
@@ -10,9 +9,10 @@
     {% endif %}
   {% endwith %}
 
-<form action="#" method = "POST">
-  <imput type = "email" name="email" placeholder = "Enter Email" value ="{{email if email}}"/>
-  <input type="submit"  value="submit"/>
+<form action="#" method="POST">
+
+  <input type="email" name="email" placeholder="Enter Email" value ="{{email if email}}" />
+  <input type="submit" value="submit"/>
 </form>
 
 
